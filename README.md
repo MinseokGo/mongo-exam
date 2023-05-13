@@ -29,7 +29,7 @@ spring:
       password: User Password
       uri: mongodb://localhost:27017/DB Name
 ```
-#스프링 부트 프로젝트와 DB 통신 순서
+# 스프링 부트 프로젝트와 DB 통신 순서
 
 1.
 ```
@@ -44,3 +44,38 @@ mongod
 mongo
 ```
 4. 이후 스프링 부트 프로젝트 어플리케이션 실행(순서 미준수 시 커넥션 거부)
+
+# 로컬 폴더와 깃 레포 연동(모두 터미널에 입력)
+1.
+```
+git config --global user.name "git hub 닉네임" (내 기준 MinseokGo)
+```
+2.
+```
+git config --global user.email "git hub 이메일"
+```
+3. 클론할 레포지토리의 링크복사(해당 레포의 코드 버튼을 클릭하면 주소 나옴)
+4. 연동할 로컬 폴더로 터미널 상에서 cd를 통해 path 지정
+```
+cd Documents/...
+```
+5. 
+```
+git clone 복사한 주소
+```
+6. 클론된 레포가 로컬 저장소에 생성됨. 이때 저장할 파일들을 클론된 레포에 옮김
+7. 추가, 변경된 파일 확인
+```
+git status
+```
+8.
+```
+git add .
+또는
+git add 파일/디렉토리 경로
+```
+9. 커밋 후 푸시
+```
+git commit -m "커밋메시지"
+git push origin 브랜치명
+```
