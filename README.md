@@ -29,3 +29,18 @@ spring:
       password: User Password
       uri: mongodb://localhost:27017/DB Name
 ```
+스프링 부트 프로젝트와 DB 통신 순서
+
+1.
+```
+brew services start mongodb-community@5.0
+```
+2.
+```
+mongod
+```
+3.
+```
+mongo
+```
+4. 이후 스프링 부트 프로젝트 어플리케이션 실행
