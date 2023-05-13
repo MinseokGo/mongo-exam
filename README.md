@@ -29,7 +29,7 @@ spring:
       password: User Password
       uri: mongodb://localhost:27017/DB Name
 ```
-스프링 부트 프로젝트와 DB 통신 순서
+#스프링 부트 프로젝트와 DB 통신 순서
 
 1.
 ```
@@ -43,4 +43,4 @@ mongod
 ```
 mongo
 ```
-4. 이후 스프링 부트 프로젝트 어플리케이션 실행
+4. 이후 스프링 부트 프로젝트 어플리케이션 실행(순서 미준수 시 커넥션 거부)
